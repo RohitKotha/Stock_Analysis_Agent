@@ -3,3 +3,4 @@ langchain
 yfinance
 pandas
 ta
+langchain_groq
