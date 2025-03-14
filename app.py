@@ -11,6 +11,7 @@ agent = StockAnalysisAgent()
 st.title("📈 Stock Analysis with AI Insights")
 
 ticker = st.text_input("Enter a stock ticker (e.g., AAPL, MSFT):")
+st.markdown("Note: Use official ticker symbols only. [Find ticker symbols here](https://finance.yahoo.com/lookup).")
 if ticker:
     stock_data = fetch_stock_data(ticker)
     if isinstance(stock_data, str):
