@@ -5,7 +5,7 @@ import streamlit as st
 from components.tools import fetch_stock_data, analyze_stock
 from components.agents import StockAnalysisAgent
 
-# Initialize the agent
+
 agent = StockAnalysisAgent()
 
 st.title("📈 Stock Analysis with AI Insights")
