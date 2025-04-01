@@ -1,6 +1,6 @@
 import yfinance as yf
 import pandas as pd
-import ta  # For technical indicators
+import ta  
 
 def fetch_stock_data(ticker):
     try:

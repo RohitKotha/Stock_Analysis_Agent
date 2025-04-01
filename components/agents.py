@@ -4,7 +4,7 @@ from langchain.prompts import PromptTemplate
 import os
 
 class StockAnalysisAgent:
-    def __init__(self, model_name="mixtral-8x7b-32768", temperature=0.7):
+    def __init__(self, model_name="llama-3.3-70b-versatile", temperature=0.7):
         self.llm = ChatGroq(
             model_name=model_name,
             api_key=os.getenv('GROQ_API_KEY'),

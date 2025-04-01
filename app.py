@@ -1,16 +1,17 @@
 import os
-os.environ['GROQ_API_KEY'] = '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'
+os.environ['GROQ_API_KEY'] = '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'
 
 import streamlit as st
 from components.tools import fetch_stock_data, analyze_stock
 from components.agents import StockAnalysisAgent
 
-# Initialize the agent
+
 agent = StockAnalysisAgent()
 
 st.title("📈 Stock Analysis with AI Insights")
 
 ticker = st.text_input("Enter a stock ticker (e.g., AAPL, MSFT):")
+st.markdown("Note: Use official ticker symbols only. [Find ticker symbols here](https://finance.yahoo.com/lookup).")
 if ticker:
     stock_data = fetch_stock_data(ticker)
     if isinstance(stock_data, str):
