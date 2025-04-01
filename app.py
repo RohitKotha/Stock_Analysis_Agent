@@ -1,5 +1,5 @@
 import os
-os.environ['GROQ_API_KEY'] = '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'
+os.environ['GROQ_API_KEY'] = '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'
 
 import streamlit as st
 from components.tools import fetch_stock_data, analyze_stock
